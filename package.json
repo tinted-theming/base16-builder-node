@@ -18,6 +18,7 @@
   "dependencies": {
     "commander": "2.9.0",
     "js-yaml": "3.6.1",
+    "mustache": "2.3.0",
     "observatory": "1.0.0",
     "shelljs": "0.7.5"
   }
