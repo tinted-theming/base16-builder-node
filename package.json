@@ -1,13 +1,21 @@
 {
   "name": "base16-builder-node",
-  "version": "0.0.1",
-  "description": "Base16 Builder, writted in Node",
+  "version": "0.1.0",
+  "description": "Base16 Builder, implemented in Node JS",
   "bin": {
     "base16": "./bin/base16-cli.js"
   },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+		"url": "https://github.com/richardneililagan/base16-builder-node/"
+  },
+  "bugs": {
+    "url": "https://github.com/richardneililagan/base16-builder-node/issues"
   },
   "keywords": [
     "base16",
