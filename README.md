@@ -19,20 +19,16 @@ Usage
 ---
 
 ```
-$ base16 builder
-
-- or -
-
-$ base16 builder build
+$ base16 build
 ```
 
 Builds all templates using all your scheme files.
 
 When you run this for the first time (or when the script detects that there are no scheme and templates files in the working directory),
-this will attempt a `base16 builder update`.
+this will attempt a `base16 update`.
 
 ```
-$ base16 builder update
+$ base16 update
 ```
 
 Updates all your scheme and template definition files.
