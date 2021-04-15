@@ -29,7 +29,6 @@
     "mkdirp": "^1.0.4",
     "mustache": "^4.2.0",
     "observatory": "1.0.0",
-    "shelljs": "^0.8.4",
-    "slug": "^4.0.3"
+    "shelljs": "^0.8.4"
   }
 }
