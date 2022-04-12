@@ -12,19 +12,22 @@
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/richardneililagan/base16-builder-node/"
+    "url": "https://github.com/joshgoebel/base16-builder-node/"
   },
   "bugs": {
-    "url": "https://github.com/richardneililagan/base16-builder-node/issues"
+    "url": "https://github.com/joshgoebel/base16-builder-node/issues"
   },
   "keywords": [
     "base16",
     "base16-builder"
   ],
-  "author": "Richard Neil Ilagan <me@richardneililagan.com>",
+  "author": "Josh Goebel <hello@joshgoebel.com>",
+  "contributors": [
+    "Richard Neil Ilagan <me@richardneililagan.com>"
+  ],
   "license": "MIT",
   "dependencies": {
-    "commander": "^7.2.0",
+    "commander": "^9.1.0",
     "js-yaml": "^4.0.0",
     "mkdirp": "^1.0.4",
     "mustache": "^4.2.0",
