@@ -1,5 +1,9 @@
 
-# Created by https://www.gitignore.io/api/node
+# Created by https://www.gitignore.io/api/nodejs
+
+base16/templates/*
+# old folder
+templates
 
 ### Node ###
 # Logs

@@ -25,22 +25,27 @@ npm install -g base16-builder-node
 This package provides a `base16` console command.  Invoke it from any directory you want to build your themes, templates, and schemes in.
 
 
-## Usage
+## Basic Usage
+
+Your working directory will need the following substructure:
+
+- `base16/schemes`
+- `base16/templates`
+
+If your running directly from a GitHub checkout you'll find `base16/schemes` already populated with a submodule of all schemes.  If you've installed via `npm` or `yarn` you'll need to setup a working directory yourself.
+
 
 ```sh
+$ cd working_dir
+$ mkdir -p base16/templates && cd base16
+$ git clone https://github.com/base16-project/base16-schemes.git schemes
+$ cd templates
+$ git clone [your template of choice]
+$ git clone [another template of choice]
 $ base16 build
 ```
 
-Builds all templates using all configured scheme files.
-
-When you run build the first time (or when the script detects no scheme and templates files in the working directory),
-an `update` will be performed before building.
-
-```sh
-$ base16 update
-```
-
-Updates all scheme and template definition files from Git sources.
+Builds all templates found in `base16/templates` using all scheme files from `base16/schemes`.
 
 
 ### Build Assets
@@ -55,14 +60,12 @@ For example: `textmate`. The built files would be found at:
 
 ### If you are a template maintainer
 
-The easiest thing to do after running `update` initially is likely just to
-disable all other templates (than your own) and then simply maintain your
-template repository inside your base16 build folder (or symlink it).
+The easiest thing is to simply maintain your template repository inside your base16-build working folder (or symlink it).
 
 You could facilitate this with a tiny build script, etc:
 
 ```shell
 #!/bin/bash
-cd ../..
+cd ../../..
 base16 build
 ```
