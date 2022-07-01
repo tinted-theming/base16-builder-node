@@ -4,7 +4,6 @@
 [![license](https://badgen.net/badge/license/MIT/cyan)](https://github.com/joshgoebel/base16-builder-node/blob/main/LICENSE)
 [![open issues](https://badgen.net/github/open-issues/joshgoebel/base16-builder-node)](https://github.com/joshgoebel/base16-builder-node/issues)
 [![vulnerabilities](https://badgen.net/snyk/joshgoebel/base16-builder-node)](https://snyk.io/test/github/joshgoebel/base16-builder-node?targetFile=package.json)
-![dependencies](https://badgen.net/david/dep/joshgoebel/base16-builder-node?label=deps)
 <!-- ![build and CI status](https://badgen.net/github/checks/joshgoebel/base16-builder-node/main?label=build) -->
 <!-- [![code quality](https://badgen.net/lgtm/grade/g/joshgoebel/base16-builder-node/js?label=code+quality)](https://lgtm.com/projects/g/joshgoebel/base16-builder-node/?mode=list) -->
 
@@ -62,7 +61,7 @@ For example: `textmate`. The built files would be found at:
 
 The easiest thing is to simply maintain your template repository inside your base16-build working folder (or symlink it).
 
-You could facilitate this with a tiny build script, etc:
+You could facilitate this easily (from inside your template dir) with a tiny build script, etc:
 
 ```shell
 #!/bin/bash
