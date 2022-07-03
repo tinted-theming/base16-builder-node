@@ -1,2 +1,3 @@
 #!/usr/bin/env node
-require('./lib/app.js')
+import { main } from "./lib/app.js"
+main()
