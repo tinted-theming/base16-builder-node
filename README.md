@@ -1,18 +1,27 @@
-# base16-builder <img alt="Base16" src="./base16.png" xwidth="300" align="right" style="padding-top:0.6rem;">
+# base16-builder (node.js) <img alt="Base16" src="./base16.png" xwidth="300" align="right" style="padding-top:0.6rem;">
 
 [![latest version](https://badgen.net/npm/v/base16-builder-node?label=latest)](https://www.npmjs.com/package/base16-builder-node)
 [![license](https://badgen.net/badge/license/MIT/cyan)](https://github.com/joshgoebel/base16-builder-node/blob/main/LICENSE)
-[![open issues](https://badgen.net/github/open-issues/joshgoebel/base16-builder-node)](https://github.com/joshgoebel/base16-builder-node/issues)
-[![vulnerabilities](https://badgen.net/snyk/joshgoebel/base16-builder-node)](https://snyk.io/test/github/joshgoebel/base16-builder-node?targetFile=package.json)
+[![open issues](https://badgen.net/github/open-issues/joshgoebel/base16-builder-node)](https://github.com/base16-project/base16-builder-node/issues)
+[![vulnerabilities](https://badgen.net/snyk/base16-project/base16-builder-node)](https://snyk.io/test/github/base16-project/base16-builder-node?targetFile=package.json)
 <!-- ![build and CI status](https://badgen.net/github/checks/joshgoebel/base16-builder-node/main?label=build) -->
 <!-- [![code quality](https://badgen.net/lgtm/grade/g/joshgoebel/base16-builder-node/js?label=code+quality)](https://lgtm.com/projects/g/joshgoebel/base16-builder-node/?mode=list) -->
 
 
-[![discord](https://badgen.net/badge/icon/join%20discord?icon=discord&color=7289DA&label)](https://discord.gg/nVRVKxFzJh)
+A builder for schemes and templates based on of the [base16 specification](https://github.com/base16-project/base16) by [Chris Kempson](https://github.com/chriskempson).
+
+**Features**
+
+- Supports both `base16` and `base24` schemes/templates
+   - Base16 builder v0.10.1 spec
+   - Base16 v0.2 styling spec
+   - Base24 ([5625d94](https://github.com/Base24/base24/commit/5625d94c0720c38cc7a0703766d61131a6bda5a6)) styling spec
+- Builds all installed templates/schemes in one quick pass
 
 
+**What is Base16?**
 
-A builder for theme files based off of the [base16 specification](http://chriskempson.com/projects/base16/) by [Chris Kempson](https://github.com/chriskempson).
+[Base16](https://github.com/base16-project/base16) is an architecture for crafting color schemes and easily translating them to your favorite apps - based on carefully chosen syntax highlighting using a base of sixteen colors.
 
 
 ## Install
