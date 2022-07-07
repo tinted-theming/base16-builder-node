@@ -1,4 +1,4 @@
-# base16-builder (node.js) <img alt="Base16" src="./base16.png" xwidth="300" align="right" style="padding-top:0.6rem;">
+# base16-builder-node <img alt="Color wheel" src="./color_wheel.png" width="100" align="right" style="padding-top:0.6rem;">
 
 [![latest version](https://badgen.net/npm/v/base16-builder-node?label=latest)](https://www.npmjs.com/package/base16-builder-node)
 [![license](https://badgen.net/badge/license/MIT/cyan)](https://github.com/joshgoebel/base16-builder-node/blob/main/LICENSE)
@@ -8,20 +8,25 @@
 <!-- [![code quality](https://badgen.net/lgtm/grade/g/joshgoebel/base16-builder-node/js?label=code+quality)](https://lgtm.com/projects/g/joshgoebel/base16-builder-node/?mode=list) -->
 
 
-A builder for schemes and templates based on of the [base16 specification](https://github.com/base16-project/base16) by [Chris Kempson](https://github.com/chriskempson).
+A builder for schemes and templates based on clear, universal [style specifications](#what-is-a-style-specification).  The output is app specific theming configurations.  _Build a color scheme once, use it everywhere._
 
 **Features**
 
-- Supports both `base16` and `base24` schemes/templates
-   - Base16 builder v0.10.1 spec
-   - Base16 v0.2 styling spec
+- Supports both `base16` and `base24` style specs (with more to come)
+   - Chris's original [Base16 v0.2 styling spec](https://github.com/chriskempson/base16)
    - Base24 ([5625d94](https://github.com/Base24/base24/commit/5625d94c0720c38cc7a0703766d61131a6bda5a6)) styling spec
+- Conforms to the [Builder v0.10.1 spec](https://github.com/base16-project/base16/blob/main/builder.md)
 - Builds all installed templates/schemes in one quick pass
 
 
-**What is Base16?**
+## What is a style specification?
 
-[Base16](https://github.com/base16-project/base16) is an architecture for crafting color schemes and easily translating them to your favorite apps - based on carefully chosen syntax highlighting using a base of sixteen colors.
+A specification details palette architecture and how it should be used for rendering application UI or syntax highlighting.  Real life implementations of a style specification typically include a color scheme and app templates.
+
+**Supported specifications**
+
+- [Base16](https://github.com/base16-project/base16) - an architecture of carefully chosen syntax highlighting using a base of just sixteen colors.
+- [Base24](https://github.com/Base24/base24) - Base16 plus an additional 8 colors to allow using all 16 ANSI colors in the terminal.
 
 
 ## Install
@@ -33,14 +38,12 @@ npm install -g base16-builder-node
 This package provides a `base16` console command.  Invoke it from any directory you want to build your themes, templates, and schemes in.
 
 
-## Basic Usage
+## Basic Usage - Base16 example
 
 Your working directory will need the following substructure:
 
 - `base16/schemes`
 - `base16/templates`
-
-If your running directly from a GitHub checkout you'll find `base16/schemes` already populated with a submodule of all schemes.  If you've installed via `npm` or `yarn` you'll need to setup a working directory yourself.
 
 
 ```sh
@@ -50,10 +53,10 @@ $ git clone https://github.com/base16-project/base16-schemes.git schemes
 $ cd templates
 $ git clone [your template of choice]
 $ git clone [another template of choice]
-$ base16 build
+$ base16 build base16 --prefix base16-
 ```
 
-Builds all templates found in `base16/templates` using all scheme files from `base16/schemes`.
+Builds all templates found in `base16/templates` using all scheme files from `base16/schemes` applying the `base16-` prefix to each.
 
 
 ### Build Assets
@@ -77,3 +80,8 @@ You could facilitate this easily (from inside your template dir) with a tiny bui
 cd ../../..
 base16 build
 ```
+
+### Credit where it's due
+
+Color wheel icon thanks to [Color icons created by Nikita Golubev - Flaticon](https://www.flaticon.com/free-icons/color).
+
