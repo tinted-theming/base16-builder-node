@@ -24,6 +24,10 @@
     "base16-builder",
     "base24-builder"
   ],
+  "files": [
+    "lib/**",
+    "bin/**"
+  ],
   "author": "Josh Goebel <hello@joshgoebel.com>",
   "contributors": [
     "Richard Neil Ilagan <me@richardneililagan.com>"
