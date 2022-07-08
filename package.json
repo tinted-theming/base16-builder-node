@@ -1,6 +1,6 @@
 {
   "name": "base16-builder-node",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Base16 Builder, implemented in Node JS",
   "bin": {
     "base16": "./bin/base16-cli.js"
@@ -20,7 +20,9 @@
   },
   "keywords": [
     "base16",
-    "base16-builder"
+    "base24",
+    "base16-builder",
+    "base24-builder"
   ],
   "author": "Josh Goebel <hello@joshgoebel.com>",
   "contributors": [
