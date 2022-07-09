@@ -53,6 +53,7 @@ $ git clone https://github.com/base16-project/base16-schemes.git schemes
 $ cd templates
 $ git clone [your template of choice]
 $ git clone [another template of choice]
+$ cd ../..
 $ base16 build base16 --prefix base16-
 ```
 
