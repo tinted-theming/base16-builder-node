@@ -7,7 +7,6 @@
 <!-- ![build and CI status](https://badgen.net/github/checks/joshgoebel/base16-builder-node/main?label=build) -->
 <!-- [![code quality](https://badgen.net/lgtm/grade/g/joshgoebel/base16-builder-node/js?label=code+quality)](https://lgtm.com/projects/g/joshgoebel/base16-builder-node/?mode=list) -->
 
-
 A builder for schemes and templates based on clear, universal [style specifications](#what-is-a-style-specification).  The output is app specific theming configurations.  _Build a color scheme once, use it everywhere._
 
 **Features**
@@ -15,7 +14,7 @@ A builder for schemes and templates based on clear, universal [style specificati
 - Supports both `base16` and `base24` style specs (with more to come)
    - Chris's original [Base16 v0.2 styling spec](https://github.com/chriskempson/base16)
    - Base24 ([5625d94](https://github.com/Base24/base24/commit/5625d94c0720c38cc7a0703766d61131a6bda5a6)) styling spec
-- Conforms to the [Builder v0.10.1 spec](https://github.com/base16-project/base16/blob/main/builder.md)
+- Conforms to the [Builder v0.10.1 spec](https://github.com/base16-project/home/blob/main/builder.md)
 - Builds all installed templates/schemes in one quick pass
 
 
@@ -25,18 +24,16 @@ A specification details palette architecture and how it should be used for rende
 
 **Supported specifications**
 
-- [Base16](https://github.com/base16-project/base16) - an architecture of carefully chosen syntax highlighting using a base of just sixteen colors.
+- [Base16](https://github.com/base16-project/home) - an architecture of carefully chosen syntax highlighting using a base of just sixteen colors.
 - [Base24](https://github.com/Base24/base24) - Base16 plus an additional 8 colors to allow using all 16 ANSI colors in the terminal.
-
 
 ## Install
 
-```
+```sh
 npm install -g base16-builder-node
 ```
 
 This package provides a `base16` console command.  Invoke it from any directory you want to build your themes, templates, and schemes in.
-
 
 ## Basic Usage - Base16 example
 
@@ -45,16 +42,15 @@ Your working directory will need the following substructure:
 - `base16/schemes`
 - `base16/templates`
 
-
 ```sh
-$ cd working_dir
-$ mkdir -p base16/templates && cd base16
-$ git clone https://github.com/base16-project/base16-schemes.git schemes
-$ cd templates
-$ git clone [your template of choice]
-$ git clone [another template of choice]
-$ cd ../..
-$ base16 build base16 --prefix base16-
+cd working_dir
+mkdir -p base16/templates && cd base16
+git clone https://github.com/base16-project/base16-schemes.git schemes
+cd templates
+git clone [your template of choice]
+git clone [another template of choice]
+cd ../..
+base16 build base16 --prefix base16-
 ```
 
 Builds all templates found in `base16/templates` using all scheme files from `base16/schemes` applying the `base16-` prefix to each.
@@ -76,7 +72,7 @@ The easiest thing is to simply maintain your template repository inside your bas
 
 You could facilitate this easily (from inside your template dir) with a tiny build script, etc:
 
-```shell
+```bash
 #!/bin/bash
 cd ../../..
 base16 build
