@@ -13,10 +13,10 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/base16-project/base16-builder-node"
+    "url": "https://github.com/tinted-theming/base16-builder-node"
   },
   "bugs": {
-    "url": "https://github.com/base16-project/base16-builder-node/issues"
+    "url": "https://github.com/tinted-theming/base16-builder-node/issues"
   },
   "keywords": [
     "base16",

@@ -2,8 +2,8 @@
 
 [![latest version](https://badgen.net/npm/v/base16-builder-node?label=latest)](https://www.npmjs.com/package/base16-builder-node)
 [![license](https://badgen.net/badge/license/MIT/cyan)](https://github.com/joshgoebel/base16-builder-node/blob/main/LICENSE)
-[![open issues](https://badgen.net/github/open-issues/joshgoebel/base16-builder-node)](https://github.com/base16-project/base16-builder-node/issues)
-[![vulnerabilities](https://badgen.net/snyk/base16-project/base16-builder-node)](https://snyk.io/test/github/base16-project/base16-builder-node?targetFile=package.json)
+[![open issues](https://badgen.net/github/open-issues/joshgoebel/base16-builder-node)](https://github.com/tinted-theming/base16-builder-node/issues)
+[![vulnerabilities](https://badgen.net/snyk/tinted-theming/base16-builder-node)](https://snyk.io/test/github/tinted-theming/base16-builder-node?targetFile=package.json)
 <!-- ![build and CI status](https://badgen.net/github/checks/joshgoebel/base16-builder-node/main?label=build) -->
 <!-- [![code quality](https://badgen.net/lgtm/grade/g/joshgoebel/base16-builder-node/js?label=code+quality)](https://lgtm.com/projects/g/joshgoebel/base16-builder-node/?mode=list) -->
 
@@ -14,7 +14,7 @@ A builder for schemes and templates based on clear, universal [style specificati
 - Supports both `base16` and `base24` style specs (with more to come)
    - Chris's original [Base16 v0.2 styling spec](https://github.com/chriskempson/base16)
    - Base24 ([5625d94](https://github.com/Base24/base24/commit/5625d94c0720c38cc7a0703766d61131a6bda5a6)) styling spec
-- Conforms to the [Builder v0.10.1 spec](https://github.com/base16-project/home/blob/main/builder.md)
+- Conforms to the [Builder v0.10.1 spec](https://github.com/tinted-theming/home/blob/main/builder.md)
 - Builds all installed templates/schemes in one quick pass
 
 
@@ -24,7 +24,7 @@ A specification details palette architecture and how it should be used for rende
 
 **Supported specifications**
 
-- [Base16](https://github.com/base16-project/home) - an architecture of carefully chosen syntax highlighting using a base of just sixteen colors.
+- [Base16](https://github.com/tinted-theming/home) - an architecture of carefully chosen syntax highlighting using a base of just sixteen colors.
 - [Base24](https://github.com/Base24/base24) - Base16 plus an additional 8 colors to allow using all 16 ANSI colors in the terminal.
 
 ## Install
@@ -45,7 +45,7 @@ Your working directory will need the following substructure:
 ```sh
 cd working_dir
 mkdir -p base16/templates && cd base16
-git clone https://github.com/base16-project/base16-schemes.git schemes
+git clone https://github.com/tinted-theming/base16-schemes.git schemes
 cd templates
 git clone [your template of choice]
 git clone [another template of choice]
